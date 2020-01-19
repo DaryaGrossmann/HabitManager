@@ -1,55 +1,72 @@
-
-@media (max-width: 768px) {
-  #sidebar {
-    margin-left: -250px;
-  }
-
-  #sidebar.active {
-    margin-left: 0;
-  }
-}
-
+//
+//@media (max-width: 768px) {
+//  #sidebar {
+//    margin-left: -250px;
+//  }
+//
+//  #sidebar.active {
+//    margin-left: 0;
+//  }
+//}
 nav{
-  background: url('../../img/logo.png');
-  background-repeat: no-repeat;
+  //background: url('../../img/logo.png');
+  background-color: $companyGrey;
+  //background-repeat: no-repeat;
   background-origin: content-box;
-  background-size: auto 38px;
-
+  background-size: 350px;
+  background-position: top;
 }
+//
+////nav{
+////  background: url('../../img/logo.png');
+////  background-repeat: no-repeat;
+////  background-origin: content-box;
+////  background-size:200px;
+////  background-position: left;
+////  padding-left: 10px;
+////  background-color:$companyGrey;
+////
+////
+////}
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #fafafa;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
-
-p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-  line-height: 1.7em;
-  color: #999;
-}
-
-a, a:hover, a:focus {
-  color: inherit;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
+//body {
+//  font-family: 'Poppins', sans-serif;
+//  background: #fafafa;
+//}
+//
+//p {
+//  font-family: 'Poppins', sans-serif;
+//  font-size: 1.1em;
+//  font-weight: 300;
+//  line-height: 1.7em;
+//  color: #999;
+//}
+//
+//a, a:hover, a:focus {
+//  color: inherit;
+//  text-decoration: none;
+//  transition: all 0.3s;
+//}
+//
 #sidebar {
   /* don't forget to add all the previously mentioned styles here too */
-  background: $darkGrey;
+  background: $companyGrey;
   color: #fff;
   transition: all 0.3s;
 }
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: $darkGrey;
+  background: $companyGrey;
 }
 
 #sidebar ul.components {
   padding: 20px 0;
-  border-bottom: 1px solid $darkGrey;
+  border-bottom: 1px solid $companyGrey;
 }
 
 #sidebar ul p {
@@ -64,25 +81,25 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul li a:hover {
-  color: $darkGrey;
+  color: $companyGrey;
   background: #fff;
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
   color: #fff;
-  background: $darkGrey;
+  background: $companyGrey;
 }
 
 ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
-  background: $darkGrey;
+  background: $companyGrey;
 }
 
-.wrapper {
-  display: flex;
-  align-items: stretch;
-}
+//.wrapper {
+//  display: flex;
+//  align-items: stretch;
+//}
 
 #sidebar {
   min-width: 250px;

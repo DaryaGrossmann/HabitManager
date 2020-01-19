@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+
+{% block content %}
+
+    <div class="d-inline-flex m-5">
+        <div class="flex-row">
+            <h1 class="display-5">Neue Gewohheit <a data-toggle="modal" data-target="#helpModal"
+                                                    class="fa fa-question-circle"></a></h1>
+
+            <a data-toggle="modal" data-target="#newHabitModal"><i class="fa fa-plus-square fa-5x"></i></a>
+
+
+            <hr>
+        </div>
+        <div class="flex-row">
+            TEST
+        </div>
+        <!-- The Modal -->
+        <div class="modal fade" id="newHabi tModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        {{ form_start(form) }}
+
+                        {{ form_widget(form) }}
+                        <button type="submit">Neue Gewohnheit erstellen!</button>
+                        {{ form_end(form) }}
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="helpModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Wenn du "+" bestätigst kannst du eine neue Gewohnheit hinzufügen!
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Verstanden</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
+
+
+
