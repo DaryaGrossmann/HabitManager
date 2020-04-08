@@ -1,7 +1,19 @@
+@import "./helper/variables";
+
 body {
   background-color: #fff;
 }
 
-.form-control{
+.form-control {
   width: 380px;
+}
+
+#logo {
+  max-width: 100%;
+  height: 200px;
+}
+
+#span_logo {
+  background-color: $companyGrey;
+
 }

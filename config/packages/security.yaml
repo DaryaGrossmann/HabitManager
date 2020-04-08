@@ -9,15 +9,21 @@ security:
         app_user_provider:
             entity:
                 class: App\Entity\User
-                property: email
+                property: emailx
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
             anonymous: lazy
+            guard:
+                authenticators:
+                    - App\Security\LoginFormSecurityAuthenticator
+            logout:
+                 path: app_logout
 
-            # activate different ways to authenticate
+
+            # activate different wx ays to authenticate
             # https://symfony.com/doc/current/security.html#firewalls-authentication
 
             # https://symfony.com/doc/current/security/impersonating_user.html

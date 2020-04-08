@@ -1,0 +1,18 @@
+@import "./helper/variables";
+@import "~bootstrap";
+@import "~font-awesome";
+@import "./layout/nav";
+
+.fa-question-circle:hover{
+  color: #AAAAAA;
+}
+
+.fa-plus-square{
+  color: $companyBlue;
+}
+.fa-plus-square:hover {
+  color: lightskyblue;
+}
+
+
+
